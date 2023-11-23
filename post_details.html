@@ -1,0 +1,9 @@
+{% extends 'base.html'}
+
+{% block title %} {{post.title}} {% endblock %}
+
+{% block content %}
+    {{post.content}} <br>
+    <a href="/post/{{ post_id }}/edit"><button>Edit</button></a>
+    <a href="/post/{{ post_id }}/delete"><button>Delete</button></a>
+{% endblock %}
